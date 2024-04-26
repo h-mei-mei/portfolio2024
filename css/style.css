@@ -206,7 +206,7 @@ header nav ul li a:hover{
 }
 
 #mainvisual{
-	height: 90vh;
+	height: calc(100vh - 200px);
 	min-height: 600px;
 	width: 100%;
 	position: relative;

@@ -56,3 +56,22 @@ $("#js-hamburger").on('click', function(){ //ハンバーガーボタンが選�
     	$("body").css({ height: "100%", overflow: "hidden" });
     }
 });
+
+window.addEventListener('resize', (e) => {//ウィンドウサイズが変更されたらメニューを閉じる
+    $("#js-hamburger").removeClass("-active");
+  $(".header-wrap").toggleClass("-active");
+    $("#js-hamburger").focus();
+});
+
+$("nav ul li a").on('click', function(){ //リンクが選択されたら
+	$("#js-hamburger").removeClass("-active");
+  $(".header-wrap").toggleClass("-active");
+    $("#js-hamburger").focus();
+});
+
+// フォーカストラップ制御
+$("#js-focus-trap").focus(function () {
+	if ($("#js-hamburger").hasClass("-active")) {
+    	$("#js-hamburger").focus();
+    }
+});
