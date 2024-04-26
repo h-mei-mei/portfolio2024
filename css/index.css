@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+#mainvisual{
+	padding-top: 80px;
+}
+#mainvisual .mainvisual-box{
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+#goal{
+	text-align: center;
+	font-size: 3.2rem;
+}
+
+#gallery ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+#gallery ul li{
+	width:25%;
+	padding: 10px;
+}
+
+@media screen and (max-width: 750px){
+	
+	#goal{
+		font-size: 2.4rem;
+	}
+	
+	#gallery ul li{
+		width:50%;
+	}
+}
