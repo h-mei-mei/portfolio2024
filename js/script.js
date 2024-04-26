@@ -51,21 +51,25 @@ $("#js-hamburger").on('click', function(){ //ハンバーガーボタンが選�
   $("#js-hamburger").toggleClass("-active");
   $(".header-wrap").toggleClass("-active");
 	if ($("body").css("overflow") === "hidden") {
-    	$("body").css({ height: "", overflow: "" });
-    } else {
-    	$("body").css({ height: "100%", overflow: "hidden" });
+		$("body").css({ height: "", overflow: "" });
+    } else {	
+		$("body").css({ height: "100%", overflow: "hidden" });
     }
 });
 
 window.addEventListener('resize', (e) => {//ウィンドウサイズが変更されたらメニューを閉じる
-    $("#js-hamburger").removeClass("-active");
-  $(".header-wrap").toggleClass("-active");
-    $("#js-hamburger").focus();
+	if ($("#js-hamburger").hasClass("-active")) {
+		$("#js-hamburger").removeClass("-active");
+		$(".header-wrap").removeClass("-active");
+		$("body").css({ height: "", overflow: "" });
+		$("#js-hamburger").focus();
+	}
 });
 
 $("nav ul li a").on('click', function(){ //リンクが選択されたら
 	$("#js-hamburger").removeClass("-active");
-  $(".header-wrap").toggleClass("-active");
+  $(".header-wrap").removeClass("-active");
+	$("body").css({ height: "", overflow: "" });
     $("#js-hamburger").focus();
 });
 

@@ -348,12 +348,12 @@ opacity:0;
 
 @media screen and (max-width: 1280px){
 	header .header-wrap{
-		left: -300px;
+		opacity: 0;
 		visibility: hidden;
 		transition: .3s;
 	}
 	header .header-wrap.-active{
-		left: 0;
+		opacity: 1;
 		visibility: visible;
 	}
 	.main{
