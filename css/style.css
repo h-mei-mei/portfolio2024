@@ -50,7 +50,7 @@ a{
   height: 60px;/*リボンの高さ*/
   line-height: 60px;/*リボンの高さ*/
   text-align: center;
-  padding: 0 50px;/*横の大きさ*/
+  padding: 0 30px;/*横の大きさ*/
   font-size: 4.2rem;/*文字の大きさ*/
   background: var(--pink);color: var(--light);
 	-webkit-text-fill-color: var(--light);
@@ -213,6 +213,7 @@ header nav ul li a:hover{
 }
 
 #mainvisual .catchcopy{
+	width: 100%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -254,7 +255,7 @@ header nav ul li a:hover{
 }
 
 #profile h3 {
-	font-size: 3.2rem;
+	font-size: 2.8rem;
 }
 #profile p {
 	margin-top: 20px;
@@ -366,7 +367,7 @@ opacity:0;
 @media screen and (max-width: 800px){
 	
 	.sec-title span{
-	  font-size: 2.8rem;/*文字の大きさ*/
+	  font-size: 2.4rem;/*文字の大きさ*/
 	}
 	#mainvisual .catchcopy{
 		font-size: 3.2rem;
